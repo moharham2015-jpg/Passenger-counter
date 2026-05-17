@@ -1,17 +1,19 @@
 body {
-    background-image: url("yarn.jpeg");
+    background-image: url("train.png");
+    background-position: center;
     background-size: cover;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-attachment: fixed;
+    background-repeat: repeat-y;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    font-family: Cascadia code, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
     text-align: center;
-    height: 100vh;
+    color: white;
 }
 
-.container {
-    background: white;
-    max-width: 80%;
-    margin: auto;
-    border: 3px solid black;
-    border-radius: 10px;
+#wrapper {
+   max-width: 700px; 
 }
 
 h1 {
@@ -26,7 +28,6 @@ h2 {
 }
 
 button {
-    border: 1px solid black;
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
@@ -34,17 +35,24 @@ button {
     width: 200px;
     margin-bottom: 5px;
     border-radius: 5px;
+    transition: all 250ms ease;
+    transform: scale(1);
+    border: dashed lightblue 2px;
 }
 
 #increment-btn {
-    background: #2C2891;
+    background: darkred;
+}
+#increment-btn:hover {
+    transition: all 250ms ease;
+    transform: scale(1.055);
 }
 
 #save-btn {
-    background: #1C7947;
+    background: darkgreen;
 }
 
-#save-el {
-    font-weight: bold;
+#save-btn:hover {
+    transform: scale(1.055);
+    transition: all 250ms;
 }
-
